@@ -26,4 +26,5 @@ jobs:
         path: playwright-report/
         retention-days: 30
         env:
+  env:
   ARGOS_TOKEN: ${{ ARGOS_TOKEN=argos_a48b5f3448bbf2e86b9ed1d901f2c3c73a }}
