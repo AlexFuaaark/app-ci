@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
-        node-version: lts/*
+        node-version: 20
     - name: Install dependencies
       run: npm ci --force
     - name: Install Playwright Browsers
@@ -25,3 +25,5 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+        env:
+  ARGOS_TOKEN: ${{ ARGOS_TOKEN=argos_a48b5f3448bbf2e86b9ed1d901f2c3c73a }}
